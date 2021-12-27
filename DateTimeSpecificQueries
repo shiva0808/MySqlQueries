@@ -18,3 +18,19 @@ SELECT TIMESTAMPDIFF(MINUTE,'2003-02-01','2003-05-01 12:05:55');
 
 To get current System date and Time
 SELECT SYSDATE(), SLEEP(2), SYSDATE();
+
+
+================Get difference in two dates
+mysql> SELECT DATEDIFF('2014-01-28', '2014-01-27');
+Result: 1
+mysql> SELECT DATEDIFF('2014-01-28 11:41:14', '2014-01-27 12:10:08');
+Result: 1
+mysql> SELECT DATEDIFF('2014-01-28 11:41:14', '2014-01-27');
+Result: 1
+mysql> SELECT DATEDIFF('2014-02-15', '2014-02-10');
+Result: 5
+mysql> SELECT DATEDIFF('2014-01-28', '2013-12-31');
+Result: 28
+mysql> SELECT DATEDIFF('2013-12-31', '2014-01-28');
+Result: -28
+==============
