@@ -1,0 +1,20 @@
+To Find start date of the month
+SELECT d, DATE_SUB(d,INTERVAL DAYOFMONTH(d)-1 DAY) AS '1st of month' FROM date_val;
+
+To Conver datetime into Date format
+SELECT CAST(orders.date_purchased AS DATE) AS DATE_PURCHASED
+
+
+To Find Last day of the month
+SELECT LAST_DAY('2009-05-18');
+
+To find Month number wrt to data
+SELECT MONTH('2009-05-18');     -> will return 5
+
+To add/subtract two timestamp and get returned value in SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, or YEAR. etc
+SELECT TIMESTAMPADD(MINUTE,1,'2003-01-02');
+SELECT TIMESTAMPADD(WEEK,1,'2003-01-02');
+SELECT TIMESTAMPDIFF(MINUTE,'2003-02-01','2003-05-01 12:05:55');      
+
+To get current System date and Time
+SELECT SYSDATE(), SLEEP(2), SYSDATE();
