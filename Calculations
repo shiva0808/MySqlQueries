@@ -1,0 +1,3 @@
+SQL queries can be written in below format for calculation purpose
+
+SELECT request_id, sum(unit_value * quantity) as x from test group by request_id;
