@@ -34,3 +34,6 @@ Result: 28
 mysql> SELECT DATEDIFF('2013-12-31', '2014-01-28');
 Result: -28
 ==============
+Filter Based on date
+SELECT * FROM util_audit WHERE `DATED` BETWEEN "2012-03-15" AND "2012-03-31";
+==============
